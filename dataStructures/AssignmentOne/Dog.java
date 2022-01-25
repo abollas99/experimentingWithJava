@@ -1,4 +1,4 @@
-package dataStructures;
+package dataStructures.AssignmentOne;
 
 /******************************************************************************* *
 * Kean University
@@ -9,7 +9,7 @@ package dataStructures;
 * Program Description: OOP
 *************************************************************************/
 
-public class dog {
+public class Dog{
 
     public String name;
     public String breed;//Husky, yorkie, poodle
@@ -18,18 +18,18 @@ public class dog {
     public String color;//black, white, golden, brown
     public static int numberOfDogs;
     
-    dog(){
+    Dog(){
         numberOfDogs++;
 
     }
-    dog(String name, String breed, String color){
+    Dog(String name, String breed, String color){
         this.name = name;
         this.breed= breed;
         this.color = color;
         numberOfDogs++;
     }
 
-    dog(String name,String breed, int age, double weight, String color){ 
+    Dog(String name,String breed, int age, double weight, String color){ 
         this.name = name;
         this.breed = breed;
         this.age = age;
@@ -37,14 +37,7 @@ public class dog {
         this.color = color;
         numberOfDogs++;
     }
-    //String with Dogs Description
-    public String dogDescription(){
-        return "Name = " + this.name + "\nBreed = " + this.breed + "\nAge = " + this.age + "\nWeight = " + this.weight + "\nColor = " + this.color + "\n";
-    }
-
-
-    
-
+    //Dog Activities
     public String bark(){
         String responce = this.name + " is barking";
         return responce;
@@ -61,12 +54,9 @@ public class dog {
         String responce = this.name + " brought you their leash and would like to go for a walk.";
         return responce;
     }
-
-
-
-
-    public static int getNumberOfDogs(){
-        return this.numberOfDogs;
+    //Getters
+    public int getNumberOfDogs(){
+        return numberOfDogs;
     }
     public String getName(){
         return this.name;
