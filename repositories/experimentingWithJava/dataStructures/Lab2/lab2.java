@@ -1,4 +1,4 @@
-package dataStructures;
+package dataStructures.Lab2;
 
 
 public class lab2 {
