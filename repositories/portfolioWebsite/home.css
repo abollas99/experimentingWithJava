@@ -1,0 +1,92 @@
+html {
+    font-family: sans-serif;
+
+}
+body {
+    background-color: #50697e;
+    font-size: 20px;
+
+}
+#icon-git, #icon-li {
+  color: white;
+}
+#icon-li:hover{
+  color: #0077b5;
+}
+.navTabs {
+  color: white;
+
+}
+.navTabs:hover{
+  color: gray;
+}
+
+#icon-git:hover{
+  color: rgb(0, 0, 0);
+}
+#Brand {
+  font-size: 2em;
+  font-weight: 900;
+  color: rgb(0, 195, 255);
+}
+#current{ 
+  font-weight: 600;
+  color: rgb(104, 170, 255);
+}
+.textField {
+  background-image: url(sky.jpg);
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 200px;
+  font-size: 120px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Steelfish Rg', 'helvetica neue',
+           helvetica, arial, sans-serif;
+  font-weight: 800;
+  -webkit-font-smoothing: antialiased;
+}
+.flexContainer {
+  margin: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.flexItem {
+  border-style: solid;
+  border-color: black;
+  border-width: 15%;
+  margin: 0 2%;
+  flex-wrap: wrap;
+  margin-bottom: 3%;
+}
+.img-adjustment {
+  background-color: aliceblue;
+  width: 300px;
+  height: 300px;
+}
+.flexTitleText {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  font-weight: 600;
+  color: black;
+}
+.flexTitleText:hover {
+  font-weight: 900;
+  text-decoration: none;
+  color: black;
+  
+
+}
+.flexDescription {
+  font-size: 15px;
+  font-weight: 300;
+  padding-left: 1%;
+  padding-right: 1%;
+}
