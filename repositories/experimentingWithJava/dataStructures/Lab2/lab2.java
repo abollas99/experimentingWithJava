@@ -4,7 +4,7 @@ package dataStructures.Lab2;
 public class lab2 {
     public static void main(String[] args) {
         for(int loop = 0; loop < 5; loop++){
-            final int N = 1000000;
+            final int N = 10000;
             final int KEY = 25;
             int[] list = new int[N];
             
@@ -13,7 +13,7 @@ public class lab2 {
                 list[i]= (int)(Math.random() * 100 * (Math.random() > 0.5 ? 1 : -1));
                 //System.out.print(list[i] + "," );
             }
-            list = selectionSort(list);
+            selectionSort(list);
             long begin, end, time; // we will measure time it took to search
             //printArr(list);
             begin = System.nanoTime();//we measure in nanoseconds.
@@ -50,44 +50,38 @@ public class lab2 {
             }
             return -1;
         }
-        public static int recursiveBinarySearch(int[] sortedArray, int key, int low, int high){
-            int mid = (int)((low + high) / 2);
+        public static int recursiveBinarySearch(int[] sortedArray, int key, int low, int high)
+        {
+            int ret = -1; // default case
+        
             if(low <= high && low <= sortedArray.length-1){
+                int mid = (int)((low + high) / 2);
                 if(sortedArray[mid] < key){
-                    recursiveBinarySearch(sortedArray, key, mid+1, high);
+                    ret = recursiveBinarySearch(sortedArray, key, mid+1, high);
                 }
                 else if(sortedArray[mid] > key){
-                    recursiveBinarySearch(sortedArray, key, low, mid-1);
+                    ret = recursiveBinarySearch(sortedArray, key, low, mid-1);
                 }
                 else if(sortedArray[mid] == key){
-                    return mid;
+                    ret = mid;
                 }
             }
-            else{
-                mid = -1;
-            }
-            return mid;   
+            return ret;
         }
-        public static int[] selectionSort(int arr[]) 
-        { 
-            int pos;
-            int temp;
-            for (int i = 0; i < arr.length; i++) 
+        public static void selectionSort(int arr[]) 
+        {
+          for (int i = 0; i < arr.length - 1; i++)
+          {
+            for (int j = i + 1; j < arr.length; j++)
             { 
-                pos = i; 
-                for (int j = i+1; j < arr.length; j++) 
-               {
-                    if (arr[j] < arr[pos])                
-                    {
-                        pos = j;
-                    }
-                }
-    
-                temp = arr[pos];            
-                arr[pos] = arr[i]; 
-                arr[i] = temp; 
+              if (arr[j] < arr[i])
+              {
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+              }
             }
-            return arr; 
+          }
         }
         public static void printArr(int[] arr){
             for(int i = 0; i < arr.length; i++){
