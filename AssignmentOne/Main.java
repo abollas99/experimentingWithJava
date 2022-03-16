@@ -1,4 +1,4 @@
-package dataStructures.AssignmentOne;
+package AssignmentOne;
 
 public class Main extends Dog{
 

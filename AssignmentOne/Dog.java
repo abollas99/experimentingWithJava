@@ -1,4 +1,4 @@
-package dataStructures.AssignmentOne;
+package AssignmentOne;
 
 /******************************************************************************* *
 * Kean University

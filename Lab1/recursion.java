@@ -1,4 +1,4 @@
-package dataStructures.Lab1;
+package Lab1;
 
 public class recursion {
     public static void main(String[] args){

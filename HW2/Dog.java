@@ -1,4 +1,4 @@
-package dataStructures.Lab1;
+package HW2;
 
 /******************************************************************************* *
 * Kean University
