@@ -1,4 +1,4 @@
-package HW2;
+package AS2;
 
 import java.util.ArrayList;
 

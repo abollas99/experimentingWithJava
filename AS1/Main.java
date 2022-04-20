@@ -1,4 +1,4 @@
-package AssignmentOne;
+package AS1;
 
 public class Main extends Dog{
 
